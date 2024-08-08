@@ -1,0 +1,21 @@
+import React from "react";
+
+const Collection = () => {
+    return(
+        <section>
+            <div className="collection__section">
+                <div className="collection__header">
+                    <h1 className="collection__header__h1">OUR COLLECTION</h1>
+                    <p className="collection__header_p">Our latest collection, where classic and contemporary styles converge in perfect harmony.</p>
+                </div>
+                <div className="collection__content">
+                    <img src="techmen.png" alt="techman" />
+                    <div className="collection__classic__section"></div>
+                </div>
+            </div>
+            <button className="learn__more">Learn more <i class='bx bxs-right-top-arrow-circle'></i></button>
+        </section>
+    )
+}
+
+export default Collection

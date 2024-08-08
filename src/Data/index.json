@@ -1,0 +1,45 @@
+{
+    "product": [
+        {
+            "id": "1",
+            "src": "picture.png",
+            "title": "SUMMER SHIRT",
+            "price": "$99",
+            "reduction": "GET OFF 20%"
+        },
+        {
+            "id": "1",
+            "src": "picture.png",
+            "title": "SUMMER SHIRT",
+            "price": "$99",
+            "reduction": "GET OFF 20%"
+        },
+        {
+            "id": "1",
+            "src": "picture.png",
+            "title": "SUMMER SHIRT",
+            "price": "$99"
+        },
+        {
+            "id": "1",
+            "src": "picture.png",
+            "title": "SUMMER SHIRT",
+            "price": "$99"
+        },
+        {
+            "id": "1",
+            "src": "picture.png",
+            "title": "SUMMER SHIRT",
+            "price": "$99",
+            "reduction": "GET OFF 20%",
+            "buy": "BUY NOW",
+            "icon": "bag.png"
+        },
+        {
+            "id": "1",
+            "src": "picture.png",
+            "title": "SUMMER SHIRT",
+            "price": "$99"
+        }
+    ]
+}
