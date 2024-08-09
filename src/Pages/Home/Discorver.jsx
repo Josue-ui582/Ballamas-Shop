@@ -5,7 +5,7 @@ import Product from "../../Components/Products";
 
 const Discorver = () => {
     return(
-        <section className="discorver__section">
+        <section className="discorver_section">
             <DiscorverHeader />
             <DiscorverSection />
             <Product />
