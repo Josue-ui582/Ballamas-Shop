@@ -1,5 +1,6 @@
 import React from "react";
 import FooterService from "./FooterService";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     return(
@@ -18,7 +19,8 @@ const Footer = () => {
                 <div className="footer__service__section">
                     <FooterService />
                 </div>
-                </div>
+            </div>
+            <p className="copy__right">© BALLAMAS 2024 by <Link>Josué</Link></p>
         </footer>
     )
 }

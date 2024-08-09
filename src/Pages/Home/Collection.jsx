@@ -13,7 +13,6 @@ const Collection = () => {
                     <div className="collection__classic__section"></div>
                 </div>
             </div>
-            <button className="learn__more">Learn more <i class='bx bxs-right-top-arrow-circle'></i></button>
         </section>
     )
 }

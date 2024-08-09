@@ -1,25 +1,56 @@
-import React from "react";
-import data from "../../src/Data/index.json"
+import React from "react"
 import { Link } from "react-router-dom";
 
 const Product = () => {
     return(
-        <div className="products">
-            <div className="product">
-                {data?.product?.map((item, index) => (
-                    <div key={index} className="product__content">
-                        <div>
-                            <img src={item.src} alt="product__image" />
-                            <div className="product__detail">
-                                <p className="product__title">{item.title}</p>
-                                <p className="product__price">{item.price}</p>
-                            </div>
-                            <Link to={'/'} className="reduction">{item.reduction}</Link>
-                        </div>
-                    </div>
-                ))}
+        <div className="product__section">
+            <div className="product__container">
+                <img src="Frame 28.png" alt="" />
+                <div className="product__card">
+                    <p className="product__container__detail">SUMMER SHIRT</p>
+                    <p className="product__container__price">$99</p>
+                </div>
             </div>
-            <button className="view__more">View More</button>
+
+            <div className="product__container">
+                <img src="Frame 28.png" alt="" />
+                <div className="product__card">
+                    <p className="product__container__detail">SUMMER SHIRT</p>
+                    <p className="product__container__price">$99</p>
+                </div>
+            </div>
+
+            <div className="product__container">
+                <img src="picture.png" alt="" />
+                <div className="product__card">
+                    <p className="product__container__detail">SUMMER SHIRT</p>
+                    <p className="product__container__price">$99</p>
+                </div>
+            </div>
+
+            <div className="product__container">
+                <img src="Frame 28.png" alt="" />
+                <div className="product__card">
+                    <p className="product__container__detail">SUMMER SHIRT</p>
+                    <p className="product__container__price">$99</p>
+                </div>
+            </div>
+
+            <div className="product__container">
+                <img src="Frame 27.png" alt="" />
+                <div className="product__card">
+                    <p className="product__container__detail">SUMMER SHIRT</p>
+                    <p className="product__container__price">$99</p>
+                </div>
+            </div>
+
+            <div className="product__container">
+                <img src="Frame 28.png" alt="" />
+                <div className="product__card">
+                    <p className="product__container__detail">SUMMER SHIRT</p>
+                    <p className="product__container__price">$99</p>
+                </div>
+            </div>
         </div>
     )
 }

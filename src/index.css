@@ -47,18 +47,50 @@
 /* NavBar Style Start */
 
 nav{
+  margin: 80px 0;
+  width: 100%;
+  opacity: 0px;
+}
+
+.nav__container{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 80px 85.333px 50px;
-  width: 1,200px;
-  height: 76pxpx;
-  padding: 20px 0px 20px 0px;
-  gap: 50px;
+  height: 76px;
   border-bottom: 0.5px solid #E5E5E5;
-  opacity: 0px;
+  margin: 0 60px;
+}
 
+.vector__container{
+  display: none;
+  position: absolute;
+  margin-top: 30px;
+  margin-left: 100px;
+  width: 42px;
+  height: 24px;
+  padding: 0px 7px 0px 7px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.vector{
+  margin-bottom: 10px;
+  width: 28px;
+  height: 0px;
+  top: 15.5px;
+  left: 7px;
+  gap: 0px;
+  border: 1.5px solid var(--black);
+  background-color: var(--black);
+  opacity: 0px;
+}
+
+.sharch__basket i{
+  display: none;
+  font-size: 20px;
+  gap: 0px;
+  opacity: 0px;
 }
 
 .nav__bar__persons{
@@ -105,7 +137,7 @@ nav{
   color: var(--white);
 }
 
-.nav__bar__persons li span img{
+.nav__bar__persons li span i{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -133,27 +165,26 @@ nav{
 /* Header Section Style Start */
 
 .header__section{
-  background-image: url(/public/image.jpg);
-  margin: 80px 85.333px 50px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 1,200px;
-  height: 500px;
-  top: 164px;
-  left: 120px;
-  padding: 96px 78px 96px 78px;
-  gap: 10px;
-  border-radius: 52px;
+  width: 100%;
   opacity: 0px;
-  background-position-y: center;
+  margin: 80px 0;
 }
 
 .header__content{
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  background-image: url(/public/image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 410px;
+  background-position-y: center;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 30px;
+  margin: 0 60px;
+  border-radius: 52px;
 }
 
 .header__content__sentence{
@@ -258,13 +289,12 @@ nav{
 /* Discorver Style Start */
 
 .discorver__section{
-  margin: 80px 85.333px 50px;
+ width: 100%;
 }
 
 .discorver__header{
-  width: 1,200px;
+  margin: 50px;
   height: 72px;
-  gap: 10px;
   opacity: 0px;
 }
 
@@ -321,92 +351,38 @@ nav{
   background-color: var(--black);
 }
 
-.products{
-  width: 1,200px;
-  height: 1,004px;
-  gap: 10px;
-  opacity: 0px;
-}
-
-.product{
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-}
-
-.product__title{
-  font-family: "Archivo", sans-serif;
-  font-size: 30px;
-  font-weight: 600;
-  line-height: 36px;
-  letter-spacing: -0.04em;
-  text-align: left;
-}
-
-.product__price{
-  font-family: "Archivo", sans-serif;
-  font-size: 28px;
-  font-weight: 600;
-  line-height: 36px;
-  letter-spacing: -0.04em;
-  text-align: left;
-  color: var(--darck-gray);
-}
-
-.reduction{
-  text-decoration: none;
-  color: var(--black);
-  background-color: var(--white);
-  position: relative;
-  top: -450px;
-  left: 18px;
-  z-index: 1;
-  width: 95px;
-  height: 32px;
-  padding: 8px 10px 8px 10px;
-  gap: 10px;
-  border-radius: 100px;
-  opacity: 0px;
-  font-family: "Archivo", sans-serif;
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 16px;
-  letter-spacing: -0.04em;
-  text-align: left;
-}
-
-.view__more{
+.product__section{
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  width: 128px;
-  height: 44px;
-  padding: 12px 20px 12px 20px;
-  gap: 6px;
-  border-radius: 100px;
-  border: 1px solid var(--black);
-  opacity: 0px;
-  cursor: pointer;
-  margin: 30px auto;
-  transition: .5s ease;
+  gap: 30px;
 }
 
-.view__more:hover{
-  background-color: var(--black);
+.product__card{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
 }
 
-.view__more{
+.product__container__detail{
   font-family: "Archivo", sans-serif;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 600;
-  line-height: 20px;
+  line-height: 36px;
   letter-spacing: -0.04em;
   text-align: left;
-  background: none;
-  cursor: pointer;
 }
 
-.view__more:hover{
-  color: var(--white);
+.product__container__price{
+  font-family: "Archivo", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: -0.04em;
+  text-align: left;
+  color: #7E7E7E;
 }
 
 /* Product Style Ends*/
@@ -414,13 +390,13 @@ nav{
 /* Collection Style Start */
 
 .collection__section{
-  width: 1,200px;
   height: 554px;
   gap: 36px;
   opacity: 0px;
   margin: 80px 85.333px 50px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 50px;
 }
@@ -452,16 +428,17 @@ nav{
 }
 
 .collection__content{
+  width: 100%;
   display: flex;
-  width: 996px;
   height: 446px;
+  justify-content: center;
   gap: 16px;
   opacity: 0px;
 }
 
 .collection__classic__section{
   background-image: url(/public/classic.png);
-  width: 675px;
+  width: 500px;
   height: 446px;
   padding: 20px;
   gap: 10px;
@@ -469,50 +446,18 @@ nav{
   opacity: 0px;
 }
 
-.learn__more{
-  position: absolute;
-  margin-left: 280px;
-  bottom: -2100px;
-  padding: 8px;
-  border-radius: 20px;
-  cursor: pointer;
-  font-family: "Archivo", sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 20px;
-  letter-spacing: -0.04em;
-  text-align: left;
-  width: 120px;
-  transition: .5s ease;
-  border:  solid .5px var(--white);
-}
-
-.learn__more:hover{
-  background-color: transparent;
-  color: var(--white);
-}
-
-.learn__more i{
-  background-color: none;
-  font-size: 18px;
-  text-align: center;
-}
-
 /* Footer Style Start */
 
 footer{
-  width: 1,440px;
+  width: 100%;
   height: 308px;
-  padding: 52px 120px 52px 120px;
-  gap: 10px;
+  padding: 52px 80px 52px 80px;
   opacity: 0px;
   background-color: var(--black);
 }
 
 .footer__section{
-  width: 1,200px;
   height: 204px;
-  gap: 32px;
   opacity: 0px;
   display: flex;
   justify-content: space-between;
@@ -561,7 +506,7 @@ form{
 }
 
 .subscribetion input{
-  width: 308px;
+  width: 260px;
   height: 44px;
   padding: 0px 14px 0px 14px;
   gap: 8px;
@@ -606,7 +551,6 @@ form{
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 50px;
 }
 
 .footer__service ul p{
@@ -614,7 +558,7 @@ form{
   height: 24px;
   gap: 0px;
   opacity: 0px;
-  font-family: "Archivo";
+  font-family: "Archivo", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -641,4 +585,106 @@ form{
 
 .footer__service ul li a:hover{
   border-bottom: .5px solid #C3C3C3;
+}
+
+.copy__right{
+  height: 16px;
+  gap: 10px;
+  opacity: 0px;
+  font-family: "Archivo", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: -0.04em;
+  text-align: center;
+  color: #7E7E7E;
+}
+
+.copy__right > a{
+  color: inherit;
+  text-decoration: none;
+}
+
+.copy__right > a:hover{
+  color: var(--white);
+  font-size: 13px;
+}
+
+/* Responsive Design Start */
+
+@media (max-width: 1170px) {
+  nav ul li{
+    display: none;
+  }
+  .vector__container{
+    display: block;
+  }
+  .sharch__basket i{
+    display: inline-block;
+  }
+}
+
+@media (max-width: 1118px) {
+  footer{
+    height: 460px;
+  }
+
+  .footer__section{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .footer__service{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .copy__right{
+    margin-top: 170px;
+  }
+}
+
+@media (max-width: 1044px){
+  .collection__classic__section{
+    background-image: url(/public/Frame\ 41.png);
+    background-repeat: no-repeat;
+    width: 300px;
+  }
+
+  .collection__section{
+    height: 554px;
+    opacity: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .collection__content{
+    display: flex;
+    width: 996px;
+    height: 446px;
+    gap: 16px;
+    opacity: 0px;
+  }
+
+  @media (max-width: 780px) {
+    footer{
+      margin-top: 150px;
+    }
+  }
+
+  .collection__section{
+    margin-top: 100px;
+  }
+
+  .product__section{
+    margin-top: 100px;
+  }
+
+  .discorver__section{
+    margin-top: 100px;
+  }
 }
