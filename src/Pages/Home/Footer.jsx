@@ -11,14 +11,12 @@ const Footer = () => {
                     <form action="#">
                         <p className="form__p">Subscribe to our newsletter  for upcoming products and best discount for all items</p>
                         <div className="subscribetion">
-                            <input type="email" placeholder="Your email"/>
+                            <input type="email" placeholder="Your email" required/>
                             <button type="submit">Subscribe</button>
                         </div>
                     </form>
                 </div>
-                <div className="footer__service__section">
-                    <FooterService />
-                </div>
+                <FooterService />
             </div>
             <p className="copy__right">© BALLAMAS 2024 by <Link>Josué</Link></p>
         </footer>

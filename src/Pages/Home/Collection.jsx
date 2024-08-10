@@ -2,7 +2,7 @@ import React from "react";
 
 const Collection = () => {
     return(
-        <section>
+        <section className="collection">
             <div className="collection__section">
                 <div className="collection__header">
                     <h1 className="collection__header__h1">OUR COLLECTION</h1>
