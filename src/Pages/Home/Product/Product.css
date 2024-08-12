@@ -1,0 +1,245 @@
+
+:root{
+    --white: #ffffff;
+    --black: #000000;
+    --gray: #4d4949;
+    --light-gray: #d3d3d3;
+    --darck-gray: #a9a9a9;
+    --green: #315f31;
+    --purple: #800080;
+    --olive: #808000;
+    --ocean: #2A5259;
+  }
+
+.details{
+    width: 100%;
+}
+
+.Product__detail__section{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    overflow: hidden;
+    margin: 0 80px;
+}
+
+.Product__detail__section > img{
+    width: 35rem;
+    height: 25rem;
+    gap: 0px;
+    border-radius: 32px;
+    opacity: 0px;
+}
+
+.caracteristic{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.product__carateristic{
+    font-family: "Chillax", sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2rem;
+    letter-spacing: -0.04em;
+    text-align: left;
+}
+
+.product__carateristic__price{
+    font-family: "Archivo";
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2rem;
+    letter-spacing: -0.04em;
+    text-align: left;
+}
+
+.color > span{
+    font-family: "Archivo", sans-serif;
+    font-size: 1rem;
+    font-weight: 550;
+    line-height: 2rem;
+    letter-spacing: -0.04em;
+    text-align: left;
+}
+
+.color > div{
+    display: flex;
+    gap: .5rem;
+}
+
+.color > div > div{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 10px;
+}
+
+.green{
+    background-color: var(--green);
+}
+
+.purple{
+    background-color: var(--purple);
+}
+
+.ocean{
+    background-color: var(--ocean);
+}
+
+.olive{
+    background-color: var(--olive);
+}
+
+.size > p{
+    font-family: "Archivo", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 2rem;
+    letter-spacing: -0.04em;
+    text-align: left;
+}
+
+.size div{
+    display: flex;
+    gap: 1rem;
+}
+
+.size div > div{
+    border: 1px solid var(--black);
+    padding: .5rem;
+    border-radius: 2rem;
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+.size div > div:hover{
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.achat{
+    display: flex;
+    gap: 1rem;
+}
+
+.achat button{
+    background-color: var(--white);
+    border-radius: 2rem;
+    padding: .5rem;
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+.achat button:hover{
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.description h1{
+    font-family: "Chillax", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2rem;
+    letter-spacing: -0.04em;
+    text-align: left;
+}
+
+.description p{
+    font-family: "Archivo", sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    letter-spacing: -0.04em;
+    text-align: left;
+}
+
+.product__like{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.product__like__title{
+    font-family: "Chillax", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2rem;
+    letter-spacing: -0.04em;
+    text-align: left;
+    margin-top: 5rem;
+    margin-left: 5rem;
+    margin-bottom: 3rem;
+}
+
+.product__like__titlle{
+    font-family: "Archivo", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2rem;
+    letter-spacing: -0.04em;
+    text-align: left;
+}
+
+.product__like__price{
+    font-family: "Archivo", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2rem;
+    letter-spacing: -0.04em;
+    text-align: left;
+    color: #7E7E7E;
+}
+
+/* Responsive sart */
+
+@media (max-width: 1169px){
+    .details{
+        margin-top: 150px;
+    }
+}
+
+@media (max-width: 831px){
+    .Product__detail__section{
+        flex-direction: column;
+    }
+
+    .Product__detail__section > img{
+        width: 41rem;
+        height: 41rem;
+    }
+
+    .achat button{
+        width: 30rem;
+    }
+}
+
+@media (max-width: 826px) {
+    .Product__detail__section > img{
+        width: 35rem;
+        height: 35rem;
+    }
+}
+
+@media (max-width: 743px) {
+    .Product__detail__section > img{
+        width: 27rem;
+        height: 27rem;
+    }
+}
+
+@media (max-width: 607px) {
+    .Product__detail__section > img{
+        width: 20rem;
+        height: 20rem;
+    }
+}
+
+@media (max-width: 498px) {
+    .Product__detail__section > img{
+        width: 15rem;
+        height: 15rem;
+    }
+}

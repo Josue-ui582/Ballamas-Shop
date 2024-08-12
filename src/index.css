@@ -47,9 +47,13 @@
 /* NavBar Style Start */
 
 nav{
-  margin: 80px 0;
+  margin: 50px 0;
   width: 100%;
   opacity: 0px;
+}
+
+.close__icon{
+  display: none;
 }
 
 .nav__container{
@@ -75,11 +79,10 @@ nav{
   opacity: 0px;
 }
 
-.sharch__basket i{
-  display: none;
-  font-size: 20px;
-  gap: 0px;
-  opacity: 0px;
+.sharch__basket{
+  position: absolute;
+  top: 100px;
+  right: 70px;
 }
 
 .nav__bar__persons{
@@ -111,6 +114,7 @@ nav{
   flex-direction: row;
   gap: 18px;
   align-items: flex-start;
+  margin-right: 80px;
 }
 
 .nav__bar__about li a{
@@ -137,6 +141,9 @@ nav{
   height: 36pxpx;
   gap: 10px;
   opacity: 0px;
+  position: absolute;
+  top: 90px;
+  left: 460px;
 }
 
 .logo__content{
@@ -377,6 +384,23 @@ nav{
   letter-spacing: -0.04em;
   text-align: left;
   color: #7E7E7E;
+}
+
+.view__more{
+  position: relative;
+  text-decoration: none;
+  color: var(--black);
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid var(--black);
+  transition: .5s ease;
+  left: 33rem;
+  top: 3rem;
+}
+
+.view__more:hover{
+  background-color: var(--black);
+  color: var(--white);
 }
 
 /* Product Style Ends*/
@@ -627,12 +651,48 @@ form{
 /* Responsive Design Start */
 
 @media (max-width: 1170px) {
+
+  .logo{
+    left: 420px;
+    top: 80px;
+  }
+
+  .sharch__basket{
+    top: 90px;
+    right: 100px;
+  }
   
   .nav__container{
     margin: 0 40px;
   }
 
-  
+  .nav__container.open{
+    height: 300px;
+    display: block;
+    flex-direction: column;
+    border-bottom: none;
+    margin-top: 100px;
+    margin-top: 150px;
+    overflow: hidden;
+  }
+
+  .nav__container.open ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .header__section{
+    margin-top: 150px;
+  }
+
+  .nav__container.closed{
+    display: none;
+  }
+
   .header__content{
     margin: 0 40px;
   }
@@ -645,19 +705,16 @@ form{
     margin: 80px 40px 50px;
   }
 
-  nav ul li{
-    display: none;
-  }
-
   .vector__container{
     position: absolute;
-    margin-left: 30px;
-    margin-top: 30px;
+    top: 90px;
+    left: 30px;
     width: 42px;
     height: 24px;
     padding: 0px 7px 0px 7px;
     gap: 0px;
     opacity: 0px;
+    cursor: pointer;
   }
 
   .sharch__basket .bag{
@@ -671,9 +728,22 @@ form{
   .product__container .img{
     width: 350px;
   }
+
+  .view__more{
+    left: 27rem;
+  }
 }
 
 @media (max-width: 1118px) {
+
+  .logo{
+    left: 350px;
+  }
+
+  .sharch__basket{
+    right: 50px;
+  }
+
   footer{
     height: 480px;
   }
@@ -697,9 +767,18 @@ form{
   .product__container .img{
     width: 350px;
   }
+
+  .view__more{
+    left: 25rem;
+  }
 }
 
 @media (max-width: 1044px){
+
+  .logo{
+    left: 380px;
+  }
+
   .collection__classic__section{
     background-image: none;
   }
@@ -748,6 +827,10 @@ form{
 }
 
 @media (max-width: 900px) {
+  .logo{
+    left: 300px;
+  }
+
   .discorver__header__content{
     height: 150px;
   }
@@ -762,9 +845,16 @@ form{
   .product__container .img{
     width: 350px;
   }
+
+  .view__more{
+    left: 19rem;
+  }
 }
 
 @media (max-width: 747px) {
+  .logo{
+    left: 300px;
+  }
   footer{
     margin-top: 150px;
   }
@@ -803,6 +893,10 @@ form{
   .product__container .img{
     width: 350px;
   }
+
+  .view__more{
+    top: 1rem;
+  }
 }
 
 @media (max-width: 732px){
@@ -816,6 +910,9 @@ form{
 }
 
 @media (max-width: 725px){
+  .logo{
+    left: 240px;
+  }
   footer{
     height: 680px;
     padding: 52px 30px 52px 30px;
@@ -906,6 +1003,10 @@ form{
 }
 
 @media (max-width: 711px) {
+  .logo{
+    left: 200px;
+  }
+
   .collection__section{
     align-items: flex-start;
     justify-content: flex-start;
@@ -924,9 +1025,18 @@ form{
   .product__container .img{
     width: 350px;
   }
+
+  .view__more{
+    top: 1rem;
+    left: 17rem;
+  }
 }
 
 @media (max-width: 675px){
+  .logo{
+    left: 150px;
+  }
+
   .discorver{
     width: 430px;
   }
@@ -938,9 +1048,18 @@ form{
   .product__container .img{
     width: 350px;
   }
+
+  .view__more{
+    top: 1rem;
+    left: 13rem;
+  }
 }
 
 @media (max-width: 561px) {
+  .logo{
+    left: 160px;
+  }
+
   .separator{
     gap: 10px;
   }
@@ -978,10 +1097,24 @@ form{
   .product__container .img{
     width: 350px;
   }
+
+  .view__more{
+    top: 1rem;
+    left: 11rem;
+  }
 }
 
 @media (max-width: 530px){
+  .logo{
+    left: 100px;
+  }
+
   .discorver__header__content{
     height: 250px;
+  }
+
+  .view__more{
+    top: 1rem;
+    left: 7rem;
   }
 }
