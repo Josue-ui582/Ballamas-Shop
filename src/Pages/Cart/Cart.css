@@ -1,0 +1,103 @@
+
+:root{
+    --white: #ffffff;
+    --black: #000000;
+    --gray: #4d4949;
+    --light-gray: #d3d3d3;
+    --darck-gray: #a9a9a9;
+    --green: #315f31;
+    --purple: #800080;
+    --olive: #808000;
+    --ocean: #2A5259;
+}
+
+.cart{
+    margin: 0 80px;
+}
+
+.carts{
+    display: flex;
+    gap: 3rem;
+    overflow: hidden;
+}
+
+.cart__section{
+    display: flex;
+    justify-content: space-between;
+    width: 50rem;
+    overflow: hidden;
+}
+
+.cart__section > p{
+    font-family: "Chillax", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2rem;
+    letter-spacing: -0.04em;
+    text-align: left;
+}
+
+.delete__section{
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+.summary{
+    border: 1px solid var(--darck-gray);
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+
+.summary > div{
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+.summary > div > p{
+    font-family: "Archivo", sans-serif;
+    font-size: .7rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    letter-spacing: -0.04em;
+    text-align: left;
+    color: #7E7E7E;
+}
+
+.summary__title{
+    margin-bottom: 2rem;
+    font-family: "Archivo", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 2rem;
+    letter-spacing: -0.04em;
+    text-align: left;
+}
+
+.summary button{
+    background-color: var(--black);
+    color: var(--white);
+    padding: 0.5rem;
+    gap: 6px;
+    border-radius: 100px;
+    border: 1px solid var(--black);
+    opacity: 0px;
+    font-family: "Archivo", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 2rem;
+    letter-spacing: -0.04em;
+    text-align: left;
+    width: 100%;
+    margin-top: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.summary button:hover{
+    background-color: transparent;
+    color: var(--black);
+}
