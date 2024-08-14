@@ -1,0 +1,398 @@
+:root{
+    --white: #ffffff;
+    --black: #000000;
+    --gray: #4d4949;
+    --light-gray: #d3d3d3;
+    --darck-gray: #a9a9a9;
+    --green: #315f31;
+    --purple: #800080;
+    --olive: #808000;
+    --ocean: #2A5259;
+}
+
+.checkout__section{
+    margin: 0 80px;
+}
+
+.checkout__section > div > h5{
+    font-family: "Chillax", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 2.1rem;
+    letter-spacing: -0.04em;
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+.checkout__start{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 7rem;
+    height: 130vh;
+}
+
+.lien{
+    color: var(--black);
+    font-family: "Archivo", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 2rem;
+    letter-spacing: -0.04em;
+    text-align: left;
+}
+
+.checkout__product__1{
+    display: flex;
+    justify-content: space-between;
+    height: inherit;
+}
+
+.checkout__start__1 > div > p{
+    font-family: "Archivo", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    letter-spacing: -0.04em;
+    text-align: left;
+}
+
+.checkout__product__1{
+    margin-top: 2rem;
+}
+
+.discount{
+    margin-top: 2rem;
+    padding: 2rem 0;
+}
+
+form > h5{
+    font-family: "Archivo", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 2rem;
+    letter-spacing: -0.04em;
+    text-align: left;
+}
+
+form > input{
+    border-radius: 30px;
+    outline: none;
+    padding: 0.4rem;
+    width: 17rem;
+    font-family: "Archivo", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2rem;
+    letter-spacing: -0.04em;
+    text-align: left;
+    color: var(--black);
+}
+
+form > button{
+    margin-left: .5rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 30px;
+    line-height: 2rem;
+    background-color: var(--black);
+    color: var(--white);
+    font-family: "Archivo", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: -0.04em;
+    text-align: left;
+    cursor: pointer;
+    transform: .5s ease;
+}
+
+form > button:hover{
+    background-color: transparent;
+    color: var(--black);
+}
+
+form > p{
+    font-family: "Archivo", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 2rem;
+    letter-spacing: -0.04em;
+    text-align: left;
+}
+
+form > p > a{
+    color: inherit;
+}
+
+.subtotal{
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.subtotal > div{
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+.subtotal > .subtotal__content > p{
+    font-family: "Archivo", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 2rem;
+    letter-spacing: -0.04em;
+    text-align: left;
+    color: #7E7E7E;
+}
+
+.order__total{
+    margin-top: 1.5rem;
+    border-top: 1px solid #e1d9d9;
+    
+}
+
+.order__total > p{
+    font-family: "Archivo", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 2rem;
+    letter-spacing: -0.04em;
+    text-align: left;
+}
+
+.shipping__methode{
+    margin-top: 1.5rem;
+}
+
+.shipping__methode > form{
+    width: 100%;
+    margin-top: 1.3rem;
+}
+  
+.option {
+    display: flex;
+    align-items: center;
+    border: 0.1rem solid #ccc;
+    border-radius: 2rem;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    justify-content: space-between;
+}
+  
+  .option input[type="radio"] {
+    margin-right: 1.5rem;
+  }
+  
+.option label {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    cursor: pointer;
+}
+  
+.option__info {
+    display: flex;
+    flex-direction: column;
+}
+  
+.option__title {
+    font-weight: bold;
+}
+  
+.option__time {
+    color: #777;
+}
+  
+.option__price {
+    font-weight: bold;
+}
+
+.checkout__start__2{
+    height: inherit;
+}
+
+.checkout__start__2 > div > h5{
+    font-family: "Archivo", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 2rem;
+    letter-spacing: -0.04em;
+    text-align: left;
+}
+
+.checkout__start__2 > div > p{
+    font-family: "Archivo", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 2rem;
+    letter-spacing: -0.04em;
+    text-align: left;
+    color: #7E7E7E;
+}
+
+.get__user__id{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.user__name{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 2rem;
+}
+.user__name > div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+}
+
+.user__id{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 2rem;
+}
+
+.user__id > div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+}
+
+.user__address{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 2rem;
+}
+
+.user__address > div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+}
+
+.user__region{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 2rem;
+}
+
+.user__region > div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+}
+
+.get__user__id > div > div label{
+    font-family: "Archivo", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 2rem;
+    letter-spacing: -0.04em;
+    text-align: left;
+}
+
+.get__user__id > div > div input{
+    padding: 0.8rem 0.8rem;
+    width: 100%;
+    border-radius: 5rem;
+    outline: none;
+}
+
+.select__payment{
+    margin-top: 27rem;
+}
+
+.select__payment > h4{
+    font-family: "Archivo", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 2rem;
+    letter-spacing: -0.04em;
+    text-align: left;
+}
+
+.select__payment > div > div{
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+}
+
+.card{
+    margin-bottom: 3rem;
+}
+
+.select__payment > div > div > div{
+    border: 1px solid var(--black);
+    border-radius: 1rem;
+    width: 50%;
+    padding: 1.8rem 2rem;
+}
+
+.select__payment > div > div > div p{
+    font-family: "Archivo", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 2rem;
+    letter-spacing: -0.04em;
+    text-align: left;
+}
+
+.card__number{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.card__number > input{
+    width: 100%;
+    padding: 0.7rem 1rem;
+    border-radius: 2rem;
+}
+
+.password__line{
+    position: absolute;
+    right: 6.7rem;
+    bottom:-29.5rem;
+    font-size: 1.5rem;
+}
+
+.card__info{
+    display: flex;
+    width: 100%;
+    margin-bottom: 1.6rem;
+}
+
+.card__info > input{
+    width: 50%;
+    padding: 0.7rem 1rem;
+    border-radius: 2rem;
+}
+
+.select__payment > button{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    margin: 0 7rem;
+    overflow: hidden;
+    margin-top: 2rem;
+    padding: 0.7rem 1rem;
+    border-radius: 2rem;
+    background-color: var(--black);
+}
+
+.select__payment > button > a{
+    color: white;
+    text-decoration: none;
+}
+
+.checkout__footer{
+    margin-top: 25rem;
+}

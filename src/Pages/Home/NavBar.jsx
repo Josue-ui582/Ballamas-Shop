@@ -4,7 +4,6 @@ import { IoMdClose } from "react-icons/io";
 import { CiSearch } from "react-icons/ci";
 import { PiHandbagThin } from "react-icons/pi";
 import { useState } from "react";
-import { Link } from "react-router-dom";
 
 
 function NavBar(){
@@ -33,8 +32,8 @@ function NavBar(){
                     <ul className="nav__bar__about">
                         <li><a href="#">Shop</a></li>
                         <li><a href="#">About us</a></li>
-                        <li><a href="#"><span><i class='bx bx-user'></i></span> Account</a></li>
-                        <li><a href="Cart">Cart(0)</a></li>
+                        <li><a href="#"><span><i className='bx bx-user'></i></span> Account</a></li>
+                        <li><a href="Cart">Cart(3)</a></li>
                     </ul>
                 </div>
             </nav>

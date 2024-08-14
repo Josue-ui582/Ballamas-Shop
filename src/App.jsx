@@ -4,6 +4,7 @@ import Home from "./Pages/Home/HomeScreen/Index";
 import NavBar from "./Pages/Home/NavBar";
 import Producte from "./Pages/Home/Product/Product";
 import Cart from "./Pages/Cart/Cart";
+import CheckOut from "./Pages/CheckOut/CheckOut";
 
 const App = () => {
   return(
@@ -15,6 +16,7 @@ const App = () => {
             <Route path="/" element={<Home />}></Route>
             <Route path="/producte" element={<Producte />}></Route>
             <Route path="/cart" element={<Cart />}></Route>
+            <Route path="checkout" element={<CheckOut />}></Route>
           </Routes>
         </div>
       </Router>

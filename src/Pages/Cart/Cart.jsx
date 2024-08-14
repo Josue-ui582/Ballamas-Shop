@@ -44,7 +44,7 @@ const Cart = () => {
                             <p>Order</p>
                             <p>$524.00</p>
                         </div>
-                        <button className="checkout">Checkout now</button>
+                        <button className="checkout"><a href="CheckOut">Checkout now</a></button>
                     </div>
                 </div>
             </section>
