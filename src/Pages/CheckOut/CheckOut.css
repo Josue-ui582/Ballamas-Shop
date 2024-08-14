@@ -28,7 +28,6 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 7rem;
-    height: 130vh;
 }
 
 .lien{
@@ -45,6 +44,7 @@
     display: flex;
     justify-content: space-between;
     height: inherit;
+    overflow: hidden;
 }
 
 .checkout__start__1 > div > p{
@@ -176,6 +176,7 @@ form > p > a{
     padding: 1.5rem;
     margin-bottom: 1.5rem;
     justify-content: space-between;
+    overflow: hidden;
 }
   
   .option input[type="radio"] {
@@ -186,12 +187,14 @@ form > p > a{
     display: flex;
     justify-content: space-between;
     width: 100%;
+    overflow: hidden;
     cursor: pointer;
 }
   
 .option__info {
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
   
 .option__title {
@@ -234,6 +237,8 @@ form > p > a{
     flex-direction: column;
     gap: 1.5rem;
     width: 100%;
+    overflow-y: hidden;
+    height: inherit;
 }
 
 .user__name{
@@ -308,7 +313,7 @@ form > p > a{
 }
 
 .select__payment{
-    margin-top: 27rem;
+    margin-top: 3rem;
 }
 
 .select__payment > h4{
@@ -359,8 +364,8 @@ form > p > a{
 
 .password__line{
     position: absolute;
-    right: 6.7rem;
-    bottom:-29.5rem;
+    right: 7rem;
+    bottom: -0.1rem;
     font-size: 1.5rem;
 }
 
@@ -395,4 +400,45 @@ form > p > a{
 
 .checkout__footer{
     margin-top: 25rem;
+}
+
+/* Responsive Style */
+
+@media (max-width: 1171px) {
+    .checkout__section{
+        margin-top: 10rem;
+    }
+}
+
+@media (max-width: 1126px) {
+    .checkout__start{
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 1048px) {
+    .checkout__section{
+       margin-left: 30px;
+       margin-right: 30px;
+    }
+}
+
+@media (max-width: 979px) {
+
+    .checkout__section{
+        height: 180vh;
+    }
+    .checkout__start{
+        display: flex;
+        flex-direction: column;
+        gap: 19rem;
+        height: 130vh;
+    }
+}
+
+@media (max-width: 936px) {
+    .select__payment > button{
+        width: 50%;
+        margin: 2rem 4rem;
+    }
 }

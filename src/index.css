@@ -914,7 +914,7 @@ form{
     left: 240px;
   }
   footer{
-    height: 680px;
+    
     padding: 52px 30px 52px 30px;
   }
 
@@ -922,15 +922,14 @@ form{
     display: flex;
     flex-direction: column;
     height: 100%;
+    gap: 3rem;
   }
 
   .footer__service{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     height: 100%;
-    gap: 15px;
+    gap: 2rem;
   }
 
   form{
@@ -960,9 +959,6 @@ form{
     height: 30px;
     gap: 10px;
     opacity: 0px;
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
   }
 
   .subscribetion input{
