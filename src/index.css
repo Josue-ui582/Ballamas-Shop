@@ -156,6 +156,21 @@ nav{
 
 }
 
+.sharch__basket{
+  display: flex;
+  overflow: hidden;
+  gap: 1rem;
+}
+
+.bag{
+  display: none;
+  font-size: 1rem;
+}
+
+.search{
+  font-size: 1.5rem;
+}
+
 /* NavBar Style Ends */
 
 /* Header Section Style Start */
@@ -655,6 +670,10 @@ form{
   .logo{
     left: 420px;
     top: 80px;
+  }
+
+  .bag{
+    display: block;
   }
 
   .sharch__basket{
