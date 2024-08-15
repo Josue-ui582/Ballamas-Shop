@@ -41,7 +41,7 @@ const SelectPaiementOption = () => {
                 <input type="radio" id="radion"/>
                 <label htmlFor="radion">Use shipping address as billing address</label>
             </div>
-           <button><a href="">Pay $524.00 <GrFormNextLink /></a></button>
+           <button><a href="Payment">Pay $524.00 <GrFormNextLink /></a></button>
         </>
     )
 }

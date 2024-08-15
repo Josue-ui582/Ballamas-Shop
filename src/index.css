@@ -667,7 +667,7 @@ form{
   }
 
   .nav__container.open{
-    height: 300px;
+    height: 320px;
     display: block;
     flex-direction: column;
     border-bottom: none;
@@ -1112,5 +1112,11 @@ form{
   .view__more{
     top: 1rem;
     left: 7rem;
+  }
+}
+
+@media (max-width: 464px){
+  .footer__service{
+    gap: 0rem;
   }
 }

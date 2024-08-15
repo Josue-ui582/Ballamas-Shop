@@ -442,3 +442,9 @@ form > p > a{
         margin: 2rem 4rem;
     }
 }
+
+@media (max-width: 389px){
+    .checkout__start{
+        height: 350vh;
+    }
+}
